@@ -32,6 +32,7 @@ public class EndToEndTest extends BaseTest {
         OrderConfirmation orderConfirmation = new OrderConfirmation(driver);
         orderConfirmation.orderConfirmationMesageText.isDisplayed();
          orderNumber = orderConfirmation.getOrderNumber();
+         System.out.println("OrderNumber captured is: "+orderNumber);
     }
 
     @Test(dependsOnMethods = "submitOrderTest",groups={"returningUser","smoke"})
