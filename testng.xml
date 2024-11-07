@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" thread-count="3" name="All Test Suite">
+    <listeners>
+        <listener class-name="test.java.TestComponents.Listeners"/>
+    </listeners>
+    <groups>
+        <run>
+           <include name="smoke"/>
+        </run>
+    </groups>
+    <test verbose="2" preserve-order="true" name="/Users/sarathg/Desktop/SeleniumFrameWorkDesign">
+        <classes>
+            <class name="test.java.Tests.EndToEndTest"/>
+        </classes>
+    </test>
+</suite>
